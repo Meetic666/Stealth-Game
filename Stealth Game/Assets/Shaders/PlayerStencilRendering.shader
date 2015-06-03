@@ -2,7 +2,7 @@
 {
 	Properties 
 	{
-		_Color("Color", Color) = (0,0,0,0)
+		_Color("Color", Color) = (1,1,1,1)
 	}
 	
 	SubShader 
@@ -34,7 +34,7 @@
 			
 			float4 fragShader(FragmentData input) : COLOR0
 			{
-				fixed4 resultColor = _Color;
+				fixed4 resultColor = fixed4(1,1,1,1);
 				return resultColor;
 			}
 			

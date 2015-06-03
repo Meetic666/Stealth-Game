@@ -54,7 +54,7 @@
 				
 				fixed4 stencil = tex2D(u_PlayerStencil, input.m_UV);
 				
-				if(stencil.r == 1.0)
+				if(stencil.r != 0.0)
 				{
 					fixed4 maskColor = tex2D(u_Mask, input.m_UV);
 					
